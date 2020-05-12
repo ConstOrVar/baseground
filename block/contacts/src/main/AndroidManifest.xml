@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.komar.contacts">
+
+    <application>
+        <activity android:name=".presentation.ContactListActivity"/>
+    </application>
+</manifest>

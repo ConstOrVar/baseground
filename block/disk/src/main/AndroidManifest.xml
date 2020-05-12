@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.komar.disk">
+
+    <application>
+        <activity android:name=".presentation.DiskFragment"/>
+    </application>
+</manifest>

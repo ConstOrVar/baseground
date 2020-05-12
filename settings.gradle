@@ -1,0 +1,20 @@
+rootProject.name='BaseGround'
+
+include ':app'
+
+file('base').eachDir { dir ->
+    if(dir.name == 'design') {
+        dir.eachDir { d ->
+            include d.name
+            project(":${d.name}").projectDir = d
+        }
+    } else {
+        include dir.name
+        project(":${dir.name}").projectDir = dir
+    }
+}
+
+file('block').eachDir { dir ->
+    include dir.name
+    project(":${dir.name}").projectDir = dir
+}
